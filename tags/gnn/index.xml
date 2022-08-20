@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GNN on Aida’s home</title>
+    <link>/tags/gnn/</link>
+    <description>Recent content in GNN on Aida’s home</description>
+    <image>
+      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 20 Aug 2022 11:30:03 +0000</lastBuildDate><atom:link href="/tags/gnn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GNN</title>
+      <link>/posts/gnn/</link>
+      <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
+      
+      <guid>/posts/gnn/</guid>
+      <description>采样 Introduction of Neighbor Sampling for GNN Training, DGL
+图采样 - 小源的文章 - 知乎 https://zhuanlan.zhihu.com/p/550887321
+【NIPS 2019】LADIES: 大规模图网络训练中的采样方法 - SillySun的文章 - 知乎 https://zhuanlan.zhihu.com/p/376038155
+papers https://github.com/naganandy/graph-based-deep-learning-literature
+HOW POWERFUL ARE GRAPH NEURAL NETWORKS?</description>
+    </item>
+    
+  </channel>
+</rss>

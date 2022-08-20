@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>tools on Aida’s home</title>
+    <link>/categories/tools/</link>
+    <description>Recent content in tools on Aida’s home</description>
+    <image>
+      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 20 Aug 2022 11:30:03 +0000</lastBuildDate><atom:link href="/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker快速上手</title>
+      <link>/posts/docker/</link>
+      <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
+      
+      <guid>/posts/docker/</guid>
+      <description>Docker 属于 Linux 容器的一种封装，提供简单易用的容器使用接口
+安装 docker 设置仓库 $ sudo yum install -y yum-utils$ sudo yum-config-manager \--add-repo \https://download.docker.com/linux/centos/docker-ce.repo# 增加阿里源$ sudo yum-config-manager \--add-repo \http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo 安装 Install the latest version of Docker Engine, containerd, and Docker Compose or go to the next step to install a specific version:
+$ sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin If prompted to accept the GPG key, verify that the fingerprint matches 060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35, and if so, accept it.</description>
+    </item>
+    
+  </channel>
+</rss>

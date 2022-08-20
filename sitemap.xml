@@ -2,25 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://examplesite.com/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/first/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/first/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+    <loc>/categories/deep-learning/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+    <loc>/tags/docker/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+    <loc>/posts/docker/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/archives/</loc>
+    <loc>/tags/gnn/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/</loc>
+    <loc>/posts/gnn/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/search/</loc>
+    <loc>/posts/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>/tags/tensorflow/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>/categories/tools/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>/posts/%E5%B9%B6%E8%A1%8C%E5%8C%96tf%E6%95%B0%E6%8D%AE%E7%94%9F%E6%88%90%E5%99%A8/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>/tags/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>/posts/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E%E4%B9%8Bdssm/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>/posts/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E%E4%B9%8Bsimcse/</loc>
+    <lastmod>2022-08-20T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>/archives/</loc>
+  </url><url>
+    <loc>/search/</loc>
+  </url><url>
+    <loc>/booklist/</loc>
   </url>
 </urlset>

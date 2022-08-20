@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>tensorflow on Aida’s home</title>
+    <link>/tags/tensorflow/</link>
+    <description>Recent content in tensorflow on Aida’s home</description>
+    <image>
+      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 20 Aug 2022 11:30:03 +0000</lastBuildDate><atom:link href="/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>并行化tf数据生成器</title>
+      <link>/posts/%E5%B9%B6%E8%A1%8C%E5%8C%96tf%E6%95%B0%E6%8D%AE%E7%94%9F%E6%88%90%E5%99%A8/</link>
+      <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
+      
+      <guid>/posts/%E5%B9%B6%E8%A1%8C%E5%8C%96tf%E6%95%B0%E6%8D%AE%E7%94%9F%E6%88%90%E5%99%A8/</guid>
+      <description>在处理大规模数据时，数据无法全部载入内存，我们通常用两个选项
+使用tfrecords 使用 tf.data.Dataset.from_generator() tfrecords的并行化使用前文已经有过介绍，这里不再赘述。如果我们不想生成tfrecord中间文件，那么生成器就是你所需要的。
+本文主要记录针对 from_generator()的并行化方法，在 tf.data 中，并行化主要通过 map和 num_parallel_calls 实现，但是对一些场景，我们的generator()中有一些处理逻辑，是无法直接并行化的，最简单的方法就是将generator()中的逻辑抽出来，使用map实现。
+tf.data.Dataset generator 并行 对generator()中的复杂逻辑，我们对其进行简化，即仅在生成器中做一些下标取值的类型操作，将generator()中处理部分使用py_function 包裹(wrapped) ，然后调用map处理。
+def func(i): i = i.numpy() # Decoding from the EagerTensor object x, y = your_processing_function(training_set[i]) return x, y z = list(range(len(training_set))) # The index generator dataset = tf.data.Dataset.from_generator(lambda: z, tf.uint8) dataset = dataset.map(lambda i: tf.py_function(func=func, inp=[i], Tout=[tf.uint8, tf.float32] ), num_parallel_calls=tf.data.AUTOTUNE) 由于隐式推断的原因，有时tensor的输出shape是未知的，需要额外处理
+A Tensor&amp;rsquo;s shape (that is, the rank of the Tensor and the size of each dimension) may not always be fully known.</description>
+    </item>
+    
+    <item>
+      <title>模型召回之SimCSE</title>
+      <link>/posts/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E%E4%B9%8Bsimcse/</link>
+      <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
+      
+      <guid>/posts/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E%E4%B9%8Bsimcse/</guid>
+      <description>模型召回之SimCSE
+[TOC]
+dataset unsuper import numpy as np import math class UnsuperviseData(tf.keras.utils.Sequence): def __init__(self, x_set, batch_size): self.x = x_set self.batch_size = batch_size def __len__(self): return math.ceil(len(self.x) / self.batch_size) def __getitem__(self, idx): batch_x = self.x[idx * self.batch_size:(idx + 1) * self.batch_size] batch_x = batch_x + batch_x bx = np.array([batch_x[i::self.batch_size] for i in range(self.batch_size)]).flatten().tolist() return self._tokenizer(bx) def _tokenizer(self,x): return tokenizer(x, max_length=50, padding=True,truncation=True,return_tensors=&amp;#34;tf&amp;#34;) super class SuperviseData(tf.keras.utils.Sequence): def __init__(self, query_set, doc_set, corpus, batch_size): self.querys = query_set self.</description>
+    </item>
+    
+  </channel>
+</rss>
