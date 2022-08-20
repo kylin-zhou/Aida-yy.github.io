@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Aida’s home</title>
-    <link>/tags/</link>
+    <link>https://aida-yy.github.io/tags/</link>
     <description>Recent content in Tags on Aida’s home</description>
     <image>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Aug 2022 11:30:03 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Aug 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://aida-yy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>docker</title>
-      <link>/tags/docker/</link>
+      <link>https://aida-yy.github.io/tags/docker/</link>
       <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
       
-      <guid>/tags/docker/</guid>
+      <guid>https://aida-yy.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GNN</title>
-      <link>/tags/gnn/</link>
+      <link>https://aida-yy.github.io/tags/gnn/</link>
       <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
       
-      <guid>/tags/gnn/</guid>
+      <guid>https://aida-yy.github.io/tags/gnn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tensorflow</title>
-      <link>/tags/tensorflow/</link>
+      <link>https://aida-yy.github.io/tags/tensorflow/</link>
       <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
       
-      <guid>/tags/tensorflow/</guid>
+      <guid>https://aida-yy.github.io/tags/tensorflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>模型召回</title>
-      <link>/tags/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E/</link>
+      <link>https://aida-yy.github.io/tags/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E/</link>
       <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
       
-      <guid>/tags/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E/</guid>
+      <guid>https://aida-yy.github.io/tags/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E/</guid>
       <description></description>
     </item>
     

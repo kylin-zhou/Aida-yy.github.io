@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Deep learning on Aida’s home</title>
-    <link>/categories/deep-learning/</link>
+    <link>https://aida-yy.github.io/categories/deep-learning/</link>
     <description>Recent content in Deep learning on Aida’s home</description>
     <image>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Aug 2022 11:30:03 +0000</lastBuildDate><atom:link href="/categories/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Aug 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://aida-yy.github.io/categories/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GNN</title>
-      <link>/posts/gnn/</link>
+      <link>https://aida-yy.github.io/posts/gnn/</link>
       <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
       
-      <guid>/posts/gnn/</guid>
+      <guid>https://aida-yy.github.io/posts/gnn/</guid>
       <description>采样 Introduction of Neighbor Sampling for GNN Training, DGL
 图采样 - 小源的文章 - 知乎 https://zhuanlan.zhihu.com/p/550887321
 【NIPS 2019】LADIES: 大规模图网络训练中的采样方法 - SillySun的文章 - 知乎 https://zhuanlan.zhihu.com/p/376038155
@@ -25,10 +25,10 @@ HOW POWERFUL ARE GRAPH NEURAL NETWORKS?</description>
     
     <item>
       <title>并行化tf数据生成器</title>
-      <link>/posts/%E5%B9%B6%E8%A1%8C%E5%8C%96tf%E6%95%B0%E6%8D%AE%E7%94%9F%E6%88%90%E5%99%A8/</link>
+      <link>https://aida-yy.github.io/posts/%E5%B9%B6%E8%A1%8C%E5%8C%96tf%E6%95%B0%E6%8D%AE%E7%94%9F%E6%88%90%E5%99%A8/</link>
       <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
       
-      <guid>/posts/%E5%B9%B6%E8%A1%8C%E5%8C%96tf%E6%95%B0%E6%8D%AE%E7%94%9F%E6%88%90%E5%99%A8/</guid>
+      <guid>https://aida-yy.github.io/posts/%E5%B9%B6%E8%A1%8C%E5%8C%96tf%E6%95%B0%E6%8D%AE%E7%94%9F%E6%88%90%E5%99%A8/</guid>
       <description>在处理大规模数据时，数据无法全部载入内存，我们通常用两个选项
 使用tfrecords 使用 tf.data.Dataset.from_generator() tfrecords的并行化使用前文已经有过介绍，这里不再赘述。如果我们不想生成tfrecord中间文件，那么生成器就是你所需要的。
 本文主要记录针对 from_generator()的并行化方法，在 tf.data 中，并行化主要通过 map和 num_parallel_calls 实现，但是对一些场景，我们的generator()中有一些处理逻辑，是无法直接并行化的，最简单的方法就是将generator()中的逻辑抽出来，使用map实现。
@@ -39,10 +39,10 @@ A Tensor&amp;rsquo;s shape (that is, the rank of the Tensor and the size of each
     
     <item>
       <title>模型召回之DSSM</title>
-      <link>/posts/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E%E4%B9%8Bdssm/</link>
+      <link>https://aida-yy.github.io/posts/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E%E4%B9%8Bdssm/</link>
       <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
       
-      <guid>/posts/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E%E4%B9%8Bdssm/</guid>
+      <guid>https://aida-yy.github.io/posts/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E%E4%B9%8Bdssm/</guid>
       <description>模型召回之DSSM 双塔模型
 负样本构造：训练前构造或训练时批内构造
 实现 model from transformers import AutoConfig,AutoTokenizer,TFAutoModel MODEL_NAME = &amp;#34;hfl/chinese-roberta-wwm-ext&amp;#34; tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME) config = AutoConfig.from_pretrained(MODEL_NAME) # backbone = TFAutoModel.from_pretrained(MODEL_NAME) # tokenizer.save_pretrained(&amp;#39;model&amp;#39;) # config.save_pretrained(&amp;#39;model&amp;#39;) # backbone.save_pretrained(&amp;#39;model&amp;#39;) class baseModel(tf.keras.Model): def __init__(self,MODEL_NAME,finetune=False,pooler=&amp;#34;avg&amp;#34;): super().__init__() self.pooler = pooler self.backbone = TFAutoModel.from_pretrained(MODEL_NAME) if not finetune: self.backbone.trainable = False print(&amp;#34;bert close&amp;#34;) self.dense_layer = tf.keras.layers.Dense(128) def call(self,inputs): x = self.backbone(inputs) if self.pooler == &amp;#34;cls&amp;#34;: x = x[1] elif self.pooler == &amp;#34;avg&amp;#34;: x = tf.reduce_mean(x[0],axis=1) elif self.</description>
@@ -50,10 +50,10 @@ A Tensor&amp;rsquo;s shape (that is, the rank of the Tensor and the size of each
     
     <item>
       <title>模型召回之SimCSE</title>
-      <link>/posts/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E%E4%B9%8Bsimcse/</link>
+      <link>https://aida-yy.github.io/posts/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E%E4%B9%8Bsimcse/</link>
       <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
       
-      <guid>/posts/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E%E4%B9%8Bsimcse/</guid>
+      <guid>https://aida-yy.github.io/posts/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E%E4%B9%8Bsimcse/</guid>
       <description>模型召回之SimCSE
 [TOC]
 dataset unsuper import numpy as np import math class UnsuperviseData(tf.keras.utils.Sequence): def __init__(self, x_set, batch_size): self.x = x_set self.batch_size = batch_size def __len__(self): return math.ceil(len(self.x) / self.batch_size) def __getitem__(self, idx): batch_x = self.x[idx * self.batch_size:(idx + 1) * self.batch_size] batch_x = batch_x + batch_x bx = np.array([batch_x[i::self.batch_size] for i in range(self.batch_size)]).flatten().tolist() return self._tokenizer(bx) def _tokenizer(self,x): return tokenizer(x, max_length=50, padding=True,truncation=True,return_tensors=&amp;#34;tf&amp;#34;) super class SuperviseData(tf.keras.utils.Sequence): def __init__(self, query_set, doc_set, corpus, batch_size): self.querys = query_set self.</description>
