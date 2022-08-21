@@ -20,6 +20,15 @@
     </item>
     
     <item>
+      <title>量化</title>
+      <link>https://aida-yy.github.io/categories/%E9%87%8F%E5%8C%96/</link>
+      <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://aida-yy.github.io/categories/%E9%87%8F%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>AISec</title>
       <link>https://aida-yy.github.io/categories/aisec/</link>
       <pubDate>Sat, 20 Aug 2022 20:30:03 +0000</pubDate>
@@ -29,20 +38,11 @@
     </item>
     
     <item>
-      <title>tools</title>
-      <link>https://aida-yy.github.io/categories/tools/</link>
+      <title>docker</title>
+      <link>https://aida-yy.github.io/categories/docker/</link>
       <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
       
-      <guid>https://aida-yy.github.io/categories/tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>量化</title>
-      <link>https://aida-yy.github.io/categories/%E9%87%8F%E5%8C%96/</link>
-      <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
-      
-      <guid>https://aida-yy.github.io/categories/%E9%87%8F%E5%8C%96/</guid>
+      <guid>https://aida-yy.github.io/categories/docker/</guid>
       <description></description>
     </item>
     

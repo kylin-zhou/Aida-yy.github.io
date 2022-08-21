@@ -162,6 +162,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>模型召回之DSSM
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>模型召回之DSSM 双塔模型
+负样本构造：训练前构造或训练时批内构造
+实现 model from transformers import AutoConfig,AutoTokenizer,TFAutoModel MODEL_NAME = &#34;hfl/chinese-roberta-wwm-ext&#34; tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME) config = AutoConfig.from_pretrained(MODEL_NAME) # backbone = TFAutoModel.from_pretrained(MODEL_NAME) # tokenizer.save_pretrained(&#39;model&#39;) # config.save_pretrained(&#39;model&#39;) # backbone.save_pretrained(&#39;model&#39;) class baseModel(tf.keras.Model): def __init__(self,MODEL_NAME,finetune=False,pooler=&#34;avg&#34;): super().__init__() self.pooler = pooler self.backbone = TFAutoModel.from_pretrained(MODEL_NAME) if not finetune: self.backbone.trainable = False print(&#34;bert close&#34;) self.dense_layer = tf.keras.layers.Dense(128) def call(self,inputs): x = self.backbone(inputs) if self.pooler == &#34;cls&#34;: x = x[1] elif self.pooler == &#34;avg&#34;: x = tf.reduce_mean(x[0],axis=1) elif self....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-08-20 11:30:03 +0000 +0000'>August 20, 202020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;290 words&nbsp;·&nbsp;Gongyan Zhou</footer>
+  <a class="entry-link" aria-label="post link to 模型召回之DSSM" href="https://aida-yy.github.io/posts/%E6%A8%A1%E5%9E%8B%E5%8F%AC%E5%9B%9E%E4%B9%8Bdssm/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>模型召回之SimCSE
     </h2>
   </header>

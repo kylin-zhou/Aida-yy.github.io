@@ -9,7 +9,54 @@
       <link>https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Aug 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://aida-yy.github.io/categories/%E9%87%8F%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://aida-yy.github.io/categories/%E9%87%8F%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>量化工具与平台</title>
+      <link>https://aida-yy.github.io/posts/%E9%87%8F%E5%8C%96%E5%B7%A5%E5%85%B7%E7%AF%87/</link>
+      <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://aida-yy.github.io/posts/%E9%87%8F%E5%8C%96%E5%B7%A5%E5%85%B7%E7%AF%87/</guid>
+      <description>工欲善其事，必先利其器
+量化交易常用工具梳理，量化可以分为三步：数据、回测、实盘
+数据篇 1 akshare
+个人用户首推，因为免费！
+2 tushare
+Tushare大数据开放社区 https://tushare.pro/
+号称免费，实则积分制，和收钱没啥区别，1积分=1rmb，所以年费大概200-1500，数据质量风评一般
+3 rqdata
+米筐旗下 https://www.ricequant.com/welcome/rqdata
+本地数据服务3000 rmb/年，可以使用15天。数据质量评价不一，vn.py合作数据商
+4 jqdata
+聚宽旗下 https://www.joinquant.com/
+可以试用3个月，年费3000+，数据质量评价还可以
+5 Udata
+恒有数 https://udata.hs.net/home
+恒生电子旗下，年费不清楚
+6 wind
+wind金融数据，主要是机构使用，或者有钱用户可以上，数据质量最好，年费应该30000+
+7 自己爬
+除了上述第三方整理数据，可以自己爬各种财经网站等
+回测篇 1 聚宽量化
+https://www.joinquant.com/
+在线量化平台，有很多策略可以学习，每天免费回测60分钟，社区活跃，应该是国内最大的社区，推荐
+2 万矿
+wind旗下的量化平台 https://www.windquant.com/
+在线量化平台，社区几乎不活跃，但是简单易上手
+3 Backtrader
+最著名的开源回测工具 https://github.com/mementum/backtrader
+4 qlib
+微软开源的机器学习量化平台 https://github.com/microsoft/qlib
+5 Bigquant
+号称使用人工智能策略，主要还是在机器学习多因子选股等方面
+6 其他
+掘金量化、Zipline等，没有深入研究，有兴趣可以浏览
+实盘篇 1 vn.py
+官网：https://www.vnpy.com/ （警惕罗生门 vnpy碰瓷户）
+github start最高的开源量化工具，主要用于实盘交易，当然也支持回测。实盘需要联系客户经理申请
+2 无限易 pythonGo
+新一代期货、期权交易终端 https://infinitrader.</description>
+    </item>
+    
     <item>
       <title>策略分析-macd</title>
       <link>https://aida-yy.github.io/posts/%E7%AD%96%E7%95%A5%E5%88%86%E6%9E%90-macd/</link>

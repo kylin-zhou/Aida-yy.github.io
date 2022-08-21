@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | Aida’s home</title>
+<title>docker | Aida’s home</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Aida’s home">
+<meta name="description" content="ExampleSite description">
 <meta name="author" content="Gongyan Zhou">
-<link rel="canonical" href="https://aida-yy.github.io/posts/">
+<link rel="canonical" href="https://aida-yy.github.io/categories/docker/">
 <meta name="yandex-verification" content="XYZabc">
 <meta name="msvalidate.01" content="XYZabc">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.3299c596a7007118365635c056dd427dace22b7b8c1341fdef6fa6c31359ba10.css" integrity="" rel="preload stylesheet" as="style">
@@ -20,7 +20,7 @@
 <link rel="mask-icon" href="https://aida-yy.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://aida-yy.github.io/posts/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://aida-yy.github.io/categories/docker/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -62,32 +62,17 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
-<meta property="og:title" content="Posts" />
+<meta property="og:title" content="docker" />
 <meta property="og:description" content="ExampleSite description" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://aida-yy.github.io/posts/" /><meta property="og:image" content="https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="og:site_name" content="Aida’s home" />
+<meta property="og:url" content="https://aida-yy.github.io/categories/docker/" /><meta property="og:image" content="https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="og:site_name" content="Aida’s home" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
-<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:title" content="docker"/>
 <meta name="twitter:description" content="ExampleSite description"/>
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://aida-yy.github.io/posts/"
-    }
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -159,9 +144,9 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://aida-yy.github.io/">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://aida-yy.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://aida-yy.github.io/categories/">Categories</a></div>
   <h1>
-    Posts
+    docker
     <a href="index.xml" title="RSS" aria-label="RSS">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" height="23">
@@ -173,91 +158,7 @@
   </h1>
 </header>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>HOW POWERFUL GNN
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>HOW POWERFUL ARE GRAPH NEURAL NETWORKS?
-本文是 Jure Leskovec 又一力作，首先对图神经网络的原理做了深入检出、提纲挈领的叙述，然后从原理方面介绍了如何发挥图神经网络的效用。
-图神经网络可以分为三个阶段：
-Aggregate：聚合邻居节点信息 $$ a^{(k)}{v} = AGGREGATE^{(k)}({h{\mu}^{(k−1)}:\mu\in N(v)}) $$
-Combine：聚合邻居和当前节点 $$ h_{\mu}^{(k)} = COMBINE^{(k)}({h_{\mu}^{(k−1)},a^{(k)}_v}) $$
-Readout：整合表示图中所有节点 $$ h_G = READOUT({h^{(K)}_v|v \in G}) $$
-在GraphSAGE中，Aggregate和Combine过程如下，GCN同理
-那么如何衡量图神经网络是否学到了良好的表示，这里提到了 Weisfeiler-Lehman test ，有兴趣可以下去研究。
-文章的和核心出发点在于：对于子树结构相同且对应节点特征相同的的俩个节点，一个有效的GNN应该有能力映射两个节点到embedding空间中相同的位置，决不会将两个不同的节点映射到同一embedding空间位置。
-Intuitively, a maximally powerful GNN maps two nodes to the same location only if they have identical subtree structures with identical features on the corresponding nodes
-A maximally powerful GNN would never map two different neighborhoods...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-08-21 00:00:00 +0000 UTC'>August 21, 212121</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;141 words&nbsp;·&nbsp;Gongyan Zhou</footer>
-  <a class="entry-link" aria-label="post link to HOW POWERFUL GNN" href="https://aida-yy.github.io/posts/gnn_powerful_gin/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>量化工具与平台
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>工欲善其事，必先利其器
-量化交易常用工具梳理，量化可以分为三步：数据、回测、实盘
-数据篇 1 akshare
-个人用户首推，因为免费！
-2 tushare
-Tushare大数据开放社区 https://tushare.pro/
-号称免费，实则积分制，和收钱没啥区别，1积分=1rmb，所以年费大概200-1500，数据质量风评一般
-3 rqdata
-米筐旗下 https://www.ricequant.com/welcome/rqdata
-本地数据服务3000 rmb/年，可以使用15天。数据质量评价不一，vn.py合作数据商
-4 jqdata
-聚宽旗下 https://www.joinquant.com/
-可以试用3个月，年费3000&#43;，数据质量评价还可以
-5 Udata
-恒有数 https://udata.hs.net/home
-恒生电子旗下，年费不清楚
-6 wind
-wind金融数据，主要是机构使用，或者有钱用户可以上，数据质量最好，年费应该30000&#43;
-7 自己爬
-除了上述第三方整理数据，可以自己爬各种财经网站等
-回测篇 1 聚宽量化
-https://www.joinquant.com/
-在线量化平台，有很多策略可以学习，每天免费回测60分钟，社区活跃，应该是国内最大的社区，推荐
-2 万矿
-wind旗下的量化平台 https://www.windquant.com/
-在线量化平台，社区几乎不活跃，但是简单易上手
-3 Backtrader
-最著名的开源回测工具 https://github.com/mementum/backtrader
-4 qlib
-微软开源的机器学习量化平台 https://github.com/microsoft/qlib
-5 Bigquant
-号称使用人工智能策略，主要还是在机器学习多因子选股等方面
-6 其他
-掘金量化、Zipline等，没有深入研究，有兴趣可以浏览
-实盘篇 1 vn.py
-官网：https://www.vnpy.com/ （警惕罗生门 vnpy碰瓷户）
-github start最高的开源量化工具，主要用于实盘交易，当然也支持回测。实盘需要联系客户经理申请
-2 无限易 pythonGo
-新一代期货、期权交易终端 https://infinitrader....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-08-21 00:00:00 +0000 UTC'>August 21, 212121</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;71 words&nbsp;·&nbsp;Gongyan Zhou</footer>
-  <a class="entry-link" aria-label="post link to 量化工具与平台" href="https://aida-yy.github.io/posts/%E9%87%8F%E5%8C%96%E5%B7%A5%E5%85%B7%E7%AF%87/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>ML&amp;二进制 paper list
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>survey title year A Survey of Machine Learning Methods and Challenges for Windows Malware Classification 2021 The rise of machine learning for detection and classification of malware: Research developments, trends and challenges 2019 Malware Detection and Cyber Security via Compression FUSING FEATURE ENGINEERING AND DEEP LEARNING: A CASE STUDY FOR MALWARE CLASSIFICATION 2022 malware detection paper title tag year An Investigation of Byte N-Gram Features for Malware Classification byte n-gram 2016 ⭐⭐⭐⭐ KiloGrams: Very Large N-Grams for Malware Classification byte n-gram；kilogram 2019 ⭐⭐⭐⭐ MalConv: Malware Detection by Eating a Whole EXE....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-08-20 20:30:03 +0000 +0000'>August 20, 202020</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;652 words&nbsp;·&nbsp;Gongyan Zhou</footer>
-  <a class="entry-link" aria-label="post link to ML&amp;二进制 paper list" href="https://aida-yy.github.io/posts/ml%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%AE%BA%E6%96%87%E9%9B%86%E5%90%88/"></a>
-</article>
-
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
     <h2>docker快速上手
     </h2>
@@ -270,29 +171,6 @@ $ sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin I
   <footer class="entry-footer"><span title='2022-08-20 11:30:03 +0000 +0000'>August 20, 202020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;282 words&nbsp;·&nbsp;Gongyan Zhou</footer>
   <a class="entry-link" aria-label="post link to docker快速上手" href="https://aida-yy.github.io/posts/docker/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>并行化tf数据生成器
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>在处理大规模数据时，数据无法全部载入内存，我们通常用两个选项
-使用tfrecords 使用 tf.data.Dataset.from_generator() tfrecords的并行化使用前文已经有过介绍，这里不再赘述。如果我们不想生成tfrecord中间文件，那么生成器就是你所需要的。
-本文主要记录针对 from_generator()的并行化方法，在 tf.data 中，并行化主要通过 map和 num_parallel_calls 实现，但是对一些场景，我们的generator()中有一些处理逻辑，是无法直接并行化的，最简单的方法就是将generator()中的逻辑抽出来，使用map实现。
-tf.data.Dataset generator 并行 对generator()中的复杂逻辑，我们对其进行简化，即仅在生成器中做一些下标取值的类型操作，将generator()中处理部分使用py_function 包裹(wrapped) ，然后调用map处理。
-def func(i): i = i.numpy() # Decoding from the EagerTensor object x, y = your_processing_function(training_set[i]) return x, y z = list(range(len(training_set))) # The index generator dataset = tf.data.Dataset.from_generator(lambda: z, tf.uint8) dataset = dataset.map(lambda i: tf.py_function(func=func, inp=[i], Tout=[tf.uint8, tf.float32] ), num_parallel_calls=tf.data.AUTOTUNE) 由于隐式推断的原因，有时tensor的输出shape是未知的，需要额外处理
-A Tensor’s shape (that is, the rank of the Tensor and the size of each dimension) may not always be fully known....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-08-20 11:30:03 +0000 +0000'>August 20, 202020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;178 words&nbsp;·&nbsp;Gongyan Zhou</footer>
-  <a class="entry-link" aria-label="post link to 并行化tf数据生成器" href="https://aida-yy.github.io/posts/%E5%B9%B6%E8%A1%8C%E5%8C%96tf%E6%95%B0%E6%8D%AE%E7%94%9F%E6%88%90%E5%99%A8/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="next" href="https://aida-yy.github.io/posts/page/2/">Next&nbsp;&nbsp;»
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">
