@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>binary on Aida’s home</title>
+    <link>https://aida-yy.github.io/tags/binary/</link>
+    <description>Recent content in binary on Aida’s home</description>
+    <image>
+      <url>https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 20 Aug 2022 20:30:03 +0000</lastBuildDate><atom:link href="https://aida-yy.github.io/tags/binary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML&amp;二进制 paper list</title>
+      <link>https://aida-yy.github.io/posts/ml%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%AE%BA%E6%96%87%E9%9B%86%E5%90%88/</link>
+      <pubDate>Sat, 20 Aug 2022 20:30:03 +0000</pubDate>
+      
+      <guid>https://aida-yy.github.io/posts/ml%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%AE%BA%E6%96%87%E9%9B%86%E5%90%88/</guid>
+      <description>survey title year A Survey of Machine Learning Methods and Challenges for Windows Malware Classification 2021 The rise of machine learning for detection and classification of malware: Research developments, trends and challenges 2019 Malware Detection and Cyber Security via Compression FUSING FEATURE ENGINEERING AND DEEP LEARNING: A CASE STUDY FOR MALWARE CLASSIFICATION 2022 malware detection paper title tag year An Investigation of Byte N-Gram Features for Malware Classification byte n-gram 2016 ⭐⭐⭐⭐ KiloGrams: Very Large N-Grams for Malware Classification byte n-gram；kilogram 2019 ⭐⭐⭐⭐ MalConv: Malware Detection by Eating a Whole EXE.</description>
+    </item>
+    
+  </channel>
+</rss>

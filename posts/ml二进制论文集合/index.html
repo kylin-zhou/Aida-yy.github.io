@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>ML&amp;二进制 paper list | Aida’s home</title>
+<meta name="keywords" content="binary">
+<meta name="description" content="survey title year A Survey of Machine Learning Methods and Challenges for Windows Malware Classification 2021 The rise of machine learning for detection and classification of malware: Research developments, trends and challenges 2019 Malware Detection and Cyber Security via Compression FUSING FEATURE ENGINEERING AND DEEP LEARNING: A CASE STUDY FOR MALWARE CLASSIFICATION 2022 malware detection paper title tag year An Investigation of Byte N-Gram Features for Malware Classification byte n-gram 2016 ⭐⭐⭐⭐ KiloGrams: Very Large N-Grams for Malware Classification byte n-gram；kilogram 2019 ⭐⭐⭐⭐ MalConv: Malware Detection by Eating a Whole EXE.">
+<meta name="author" content="Gongyan Zhou">
+<link rel="canonical" href="https://aida-yy.github.io/posts/ml%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%AE%BA%E6%96%87%E9%9B%86%E5%90%88/">
+<meta name="yandex-verification" content="XYZabc">
+<meta name="msvalidate.01" content="XYZabc">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.3299c596a7007118365635c056dd427dace22b7b8c1341fdef6fa6c31359ba10.css" integrity="" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity=""
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://aida-yy.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://aida-yy.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://aida-yy.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://aida-yy.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://aida-yy.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<meta property="og:title" content="ML&amp;二进制 paper list" />
+<meta property="og:description" content="survey title year A Survey of Machine Learning Methods and Challenges for Windows Malware Classification 2021 The rise of machine learning for detection and classification of malware: Research developments, trends and challenges 2019 Malware Detection and Cyber Security via Compression FUSING FEATURE ENGINEERING AND DEEP LEARNING: A CASE STUDY FOR MALWARE CLASSIFICATION 2022 malware detection paper title tag year An Investigation of Byte N-Gram Features for Malware Classification byte n-gram 2016 ⭐⭐⭐⭐ KiloGrams: Very Large N-Grams for Malware Classification byte n-gram；kilogram 2019 ⭐⭐⭐⭐ MalConv: Malware Detection by Eating a Whole EXE." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aida-yy.github.io/posts/ml%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%AE%BA%E6%96%87%E9%9B%86%E5%90%88/" /><meta property="og:image" content="https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-20T20:30:03&#43;00:00" />
+<meta property="article:modified_time" content="2022-08-20T20:30:03&#43;00:00" /><meta property="og:site_name" content="Aida’s home" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
+
+<meta name="twitter:title" content="ML&amp;二进制 paper list"/>
+<meta name="twitter:description" content="survey title year A Survey of Machine Learning Methods and Challenges for Windows Malware Classification 2021 The rise of machine learning for detection and classification of malware: Research developments, trends and challenges 2019 Malware Detection and Cyber Security via Compression FUSING FEATURE ENGINEERING AND DEEP LEARNING: A CASE STUDY FOR MALWARE CLASSIFICATION 2022 malware detection paper title tag year An Investigation of Byte N-Gram Features for Malware Classification byte n-gram 2016 ⭐⭐⭐⭐ KiloGrams: Very Large N-Grams for Malware Classification byte n-gram；kilogram 2019 ⭐⭐⭐⭐ MalConv: Malware Detection by Eating a Whole EXE."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://aida-yy.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "ML\u0026二进制 paper list",
+      "item": "https://aida-yy.github.io/posts/ml%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%AE%BA%E6%96%87%E9%9B%86%E5%90%88/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "ML\u0026二进制 paper list",
+  "name": "ML\u0026二进制 paper list",
+  "description": "survey title year A Survey of Machine Learning Methods and Challenges for Windows Malware Classification 2021 The rise of machine learning for detection and classification of malware: Research developments, trends and challenges 2019 Malware Detection and Cyber Security via Compression FUSING FEATURE ENGINEERING AND DEEP LEARNING: A CASE STUDY FOR MALWARE CLASSIFICATION 2022 malware detection paper title tag year An Investigation of Byte N-Gram Features for Malware Classification byte n-gram 2016 ⭐⭐⭐⭐ KiloGrams: Very Large N-Grams for Malware Classification byte n-gram；kilogram 2019 ⭐⭐⭐⭐ MalConv: Malware Detection by Eating a Whole EXE.",
+  "keywords": [
+    "binary"
+  ],
+  "articleBody": "survey title year A Survey of Machine Learning Methods and Challenges for Windows Malware Classification 2021 The rise of machine learning for detection and classification of malware: Research developments, trends and challenges 2019 Malware Detection and Cyber Security via Compression FUSING FEATURE ENGINEERING AND DEEP LEARNING: A CASE STUDY FOR MALWARE CLASSIFICATION 2022 malware detection paper title tag year An Investigation of Byte N-Gram Features for Malware Classification byte n-gram 2016 ⭐⭐⭐⭐ KiloGrams: Very Large N-Grams for Malware Classification byte n-gram；kilogram 2019 ⭐⭐⭐⭐ MalConv: Malware Detection by Eating a Whole EXE. malconv 2018 ⭐⭐⭐⭐⭐ Classifying Sequences of Extreme Length with Constant Memory Applied to Malware Detection malconv2 2020 ⭐⭐⭐⭐ DEEP CONVOLUTIONAL MALWARE CLASSIFIERS CAN LEARN FROM RAW EXECUTABLES AND LABELS ONLY. DeepConv ⭐⭐⭐⭐ Learning the PE Header, Malware Detection with Minimal Domain Knowledge. byte-header 2017 ⭐⭐⭐⭐ Exploring the PE header and the Rich header for effective Malware Classification and Triage rich header ⭐⭐⭐ Novel Feature Extraction, Selection and Fusion for Effective Malware Family Classification asm；api；n-gram 2015 ⭐⭐⭐⭐ Deep Neural Network Based Malware Detection Using Two Dimensional Binary Program Features. entropy histogram 2015 ⭐⭐⭐⭐⭐ EMBER: An Open Dataset for Training Static PE Malware Machine Learning Models. PE；dataset 2018 ⭐⭐⭐⭐⭐ SOREL-20M: A Large Scale Benchmark Dataset for Malicious PE Detection PE；dataset 2020 ⭐⭐⭐⭐ malware classification with machine learning enhanced by windows kernel emulation pe; malconv 2022 MOTIF: A Large Malware Reference Dataset with Ground Truth Family Labels pe;malconv2;family；hash 2021 ⭐⭐⭐⭐ Classification of malware by using structural entropy on convolutional neural networks entropy 2018 ⭐⭐⭐⭐ HYDRA: A multimodal deep learning framework for malware classification API；byte；asm Learning from Context: Exploiting and Interpreting File Path Information for Better Malware Detection pe;filepath ALOHA: Auxiliary Loss Optimization for Hypothesis Augmentation multitask MtNet: A Multi-Task Neural Network for Dynamic Malware Classification blog https://www.intel.com/content/www/us/en/artificial-intelligence/documents/stamina-deep-learning-for-malware-protection-whitepaper.html\nTesting ‘Graph Hash’ in Malware Classification. https://www.trendmicro.com/en_us/research/19/i/malware-classification-with-graph-hash-applied-to-the-orca-cyberespionage-campaign.html\ngithub ember : https://github.com/elastic/ember\nmalconv: https://github.com/jaketae/deep-malware-detection`\nmalconv2: https://github.com/NeuromorphicComputationResearchProgram/MalConv2\nstringsifter: https://github.com/mandiant/stringsifter\nMiscrosoft malware 2015：https://github.com/xiaozhouwang/kaggle_Microsoft_Malware\nhttps://github.com/sophos-ai/SOREL-20M\nhttps://github.com/boozallen/MOTIF\nHybrid Machine Learning Model for Malware Detection based on Windows Kernel Emulation\nhttps://github.com/ManSoSec/Microsoft-Malware-Challenge\nhttps://github.com/danielgibert/mlw_classification_structural_entropy/tree/df834f10e7560e06e1270034b20fc72c254fbce7\nMalware Classification on Microsoft Malware Classification Challenge\nhttps://paperswithcode.com/sota/malware-classification-on-microsoft-malware\n**Top1:**HYDRA: A multimodal deep learning framework for malware classification. DeepConv https://www.sciencedirect.com/science/article/pii/S0167404820301462#bib0027\nDEEP CONVOLUTIONAL MALWARE CLASSIFIERS CAN LEARN FROM RAW EXECUTABLES AND LABELS ONLY. https://openreview.net/pdf?id=HkHrmM1PM\nhttps://github.com/danielgibert/mlw_classification_hydra\n**Top2:**Orthrus: A Bimodal Learning Architecture for Malware Classification\nhttps://github.com/danielgibert/mlw_classification_orthrus/blob/main/src/method/bimodal/base_architecture.py\n**Top3:**Using Convolutional Neural Networks for Classification of Malware represented as Images. https://link.springer.com/content/pdf/10.1007/s11416-018-0323-0.pdf\nmalware-image paper title tag year Malware Images: Visualization and Automatic Classification. image 2011 ⭐⭐⭐ Malware Classification with Deep Convolutional Neural Networks. image 2018 ⭐⭐⭐⭐ Microsoft researchers work with Intel Labs to explore new deep learning approaches for malware classification image 2020 ⭐⭐⭐ Imagebased_Malware_Classification_A_Space_Filling_Curve_Approach image；希尔伯特 2018 ⭐⭐ Binary File’s Visualization and Entropy Features Analysis Combined with Multiple Deep Learning Networks for Malware Classification image 2020 ⭐⭐⭐⭐ Malware detection employed by visualization and deep neural network gray；rgb；markov blog 二进制文件可视化（二） github What convolutional neural network architecture works best for classifying malware images\nhttps://www.intel.com/content/www/us/en/artificial-intelligence/documents/stamina-deep-learning-for-malware-protection-whitepaper.html\npacker paper title year PE-Probe: Leveraging Packer Detection and Structural Information to Detect Malicious Portable Executables 2016 ⭐⭐⭐ Collective Classification for Packed Executable Identification Packer identification method based on byte sequences When Malware is Packin’ Heat; Limits of Machine Learning Classifiers Based on Static Analysis Features 2020 ⭐⭐⭐⭐⭐ Revealing Packed Malware github\u0026blog When Malware is Packin’ Heat; Limits of Machine Learning Classifiers Based on Static Analysis Features\nslides: https://www.usenix.org/sites/default/files/conference/protected-files/enigma18_vigna.pdf ; https://www.ndss-symposium.org/ndss-paper/when-malware-is-packin-heat-limits-of-machine-learning-classifiers-based-on-static-analysis-features/\ngithub: https://github.com/ucsb-seclab/packware\nhttps://sarvamblog.blogspot.com/\nSimilarity paper A static, packer-agnostic filter to detect similar malware samples\nSimilarity-based Android Malware Detection Using Hamming Distance of Static Binary Features\nGuilt by Association: Large Scale Malware Detection by Mining File-relation Graphs\nA Survey of Binary Code Similarity\nHow Machine Learning Is Solving the Binary Function Similarity Problem\nBCD: A Cross-Architecture Binary Comparison Database Experiment Using Locality Sensitive Hashing Algorithms\nhttps://github.com/h4sh5/bcddb\ngithub https://github.com/SystemSecurityStorm/Awesome-Binary-Similarity\nbinary analysis paper PalmTree: Learning an Assembly Language Model for Instruction Embedding. https://dl.acm.org/doi/pdf/10.1145/3460120.3484587\nCodeCMR: Cross-Modal Retrieval For Function-Level Binary Source Code Matching\nAVclass2: Massive Malware Tag Extraction from AV Labels. https://arxiv.org/pdf/2006.10615.pdf\nblog BinaryAI: 二进制文件安全检测平台. https://www.binaryai.net/home\nhttps://keenlab.tencent.com/zh/2021/08/11/2021-binaryai-public-release/\nhttps://keenlab.tencent.com/zh/2019/12/10/Tencent-Keen-Security-Lab-Order-Matters/#more\ngithub https://github.com/islem-esi/DeepMalwareDetector\n",
+  "wordCount" : "652",
+  "inLanguage": "en",
+  "datePublished": "2022-08-20T20:30:03Z",
+  "dateModified": "2022-08-20T20:30:03Z",
+  "author":{
+    "@type": "Person",
+    "name": "Gongyan Zhou"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://aida-yy.github.io/posts/ml%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%AE%BA%E6%96%87%E9%9B%86%E5%90%88/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aida’s home",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://aida-yy.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://aida-yy.github.io/" accesskey="h" title="Home (Alt + H)">Home</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://aida-yy.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://aida-yy.github.io/categories/" title="categories">
+                    <span>categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://aida-yy.github.io/tags/" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://aida-yy.github.io/booklist/" title="书单">
+                    <span>书单</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://aida-yy.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://aida-yy.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://aida-yy.github.io/posts/">Posts</a></div>
+    <h1 class="post-title">
+      ML&amp;二进制 paper list
+    </h1>
+    <div class="post-meta"><span title='2022-08-20 20:30:03 +0000 +0000'>August 20, 202020</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;652 words&nbsp;·&nbsp;Gongyan Zhou
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#survey">survey</a></li>
+    <li><a href="#malware-detection">malware detection</a>
+      <ul>
+        <li><a href="#paper">paper</a></li>
+        <li><a href="#blog">blog</a></li>
+        <li><a href="#github">github</a></li>
+      </ul>
+    </li>
+    <li><a href="#malware-image">malware-image</a>
+      <ul>
+        <li><a href="#paper-1">paper</a></li>
+        <li><a href="#blog-1">blog</a></li>
+        <li><a href="#github-1">github</a></li>
+      </ul>
+    </li>
+    <li><a href="#packer">packer</a>
+      <ul>
+        <li><a href="#paper-2">paper</a></li>
+        <li><a href="#githubblog">github&amp;blog</a></li>
+      </ul>
+    </li>
+    <li><a href="#similarity">Similarity</a>
+      <ul>
+        <li><a href="#paper-3">paper</a></li>
+        <li><a href="#github-2">github</a></li>
+      </ul>
+    </li>
+    <li><a href="#binary-analysis">binary analysis</a>
+      <ul>
+        <li><a href="#paper-4">paper</a></li>
+        <li><a href="#blog-2">blog</a></li>
+        <li><a href="#github-3">github</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="survey">survey<a hidden class="anchor" aria-hidden="true" href="#survey">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>title</th>
+<th>year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://arxiv.org/pdf/2006.09271.pdf">A Survey of Machine Learning Methods and Challenges for Windows Malware Classification</a></td>
+<td>2021</td>
+</tr>
+<tr>
+<td><a href="https://www.sciencedirect.com/science/article/pii/S1084804519303868#bib42">The rise of machine learning for detection and classification of malware: Research developments, trends and challenges</a></td>
+<td>2019</td>
+</tr>
+<tr>
+<td><a href="https://www.edwardraff.com/publications/Raff_Thesis.pdf">Malware Detection and Cyber Security via Compression</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/pdf/2206.05735.pdf">FUSING FEATURE ENGINEERING AND DEEP LEARNING: A CASE STUDY FOR MALWARE CLASSIFICATION</a></td>
+<td>2022</td>
+</tr>
+</tbody>
+</table>
+<h2 id="malware-detection">malware detection<a hidden class="anchor" aria-hidden="true" href="#malware-detection">#</a></h2>
+<h3 id="paper">paper<a hidden class="anchor" aria-hidden="true" href="#paper">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>title</th>
+<th>tag</th>
+<th>year</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.edwardraff.com/publications/investigation_byte_ngrams.pdf">An Investigation of Byte N-Gram Features for Malware Classification</a></td>
+<td>byte n-gram</td>
+<td>2016</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/pdf/1908.00200.pdf">KiloGrams: Very Large N-Grams for Malware Classification</a></td>
+<td>byte n-gram；kilogram</td>
+<td>2019</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://aaai.org/ocs/index.php/WS/AAAIW18/paper/viewFile/16422/15577">MalConv: Malware Detection by Eating a Whole EXE</a>.</td>
+<td>malconv</td>
+<td>2018</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/pdf/2012.09390.pdf">Classifying Sequences of Extreme Length with Constant Memory Applied to Malware Detection</a></td>
+<td>malconv2</td>
+<td>2020</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://openreview.net/pdf?id=HkHrmM1PM">DEEP CONVOLUTIONAL MALWARE CLASSIFIERS CAN LEARN FROM RAW EXECUTABLES AND LABELS ONLY.</a></td>
+<td>DeepConv</td>
+<td></td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/ftp/arxiv/papers/1709/1709.01471.pdf">Learning the PE Header, Malware Detection with Minimal Domain Knowledge</a>.</td>
+<td>byte-header</td>
+<td>2017</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2781220/no.ntnu:inspera:77286691:22971850.pdf?sequence=1">Exploring the PE header and the Rich header for effective Malware Classification and Triage</a></td>
+<td>rich header</td>
+<td></td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/pdf/1511.04317.pdf">Novel Feature Extraction, Selection and Fusion for Effective Malware Family Classification</a></td>
+<td>asm；api；n-gram</td>
+<td>2015</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://www.cse.fau.edu/~xqzhu/courses/cap6619/deep.neural.network.based.malware.detection.pdf">Deep Neural Network Based Malware Detection Using Two Dimensional Binary Program Features.</a></td>
+<td>entropy histogram</td>
+<td>2015</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/pdf/1804.04637.pdf">EMBER: An Open Dataset for Training Static PE Malware Machine Learning Models.</a></td>
+<td>PE；dataset</td>
+<td>2018</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2012.07634">SOREL-20M: A Large Scale Benchmark Dataset for Malicious PE Detection</a></td>
+<td>PE；dataset</td>
+<td>2020</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>malware classification with machine learning enhanced by windows kernel emulation</td>
+<td>pe; malconv</td>
+<td>2022</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2111.15031">MOTIF: A Large Malware Reference Dataset with Ground Truth Family Labels</a></td>
+<td>pe;malconv2;family；hash</td>
+<td>2021</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://ojs.aaai.org/index.php/AAAI/article/view/11409">Classification of malware by using structural entropy on convolutional neural networks</a></td>
+<td>entropy</td>
+<td>2018</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>HYDRA: A multimodal deep learning framework for malware classification</td>
+<td>API；byte；asm</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/pdf/1905.06987.pdf">Learning from Context: Exploiting and Interpreting File Path Information for Better Malware Detection</a></td>
+<td>pe;filepath</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.usenix.org/system/files/sec19-rudd.pdf">ALOHA: Auxiliary Loss Optimization for Hypothesis Augmentation</a></td>
+<td>multitask</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/HuangDimva2016.pdf">MtNet: A Multi-Task Neural Network for Dynamic Malware Classification</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="blog">blog<a hidden class="anchor" aria-hidden="true" href="#blog">#</a></h3>
+<p><a href="https://www.intel.com/content/www/us/en/artificial-intelligence/documents/stamina-deep-learning-for-malware-protection-whitepaper.html">https://www.intel.com/content/www/us/en/artificial-intelligence/documents/stamina-deep-learning-for-malware-protection-whitepaper.html</a></p>
+<p>Testing &lsquo;Graph Hash’ in Malware Classification. <a href="https://www.trendmicro.com/en_us/research/19/i/malware-classification-with-graph-hash-applied-to-the-orca-cyberespionage-campaign.html">https://www.trendmicro.com/en_us/research/19/i/malware-classification-with-graph-hash-applied-to-the-orca-cyberespionage-campaign.html</a></p>
+<h3 id="github">github<a hidden class="anchor" aria-hidden="true" href="#github">#</a></h3>
+<p>ember : <a href="https://github.com/elastic/ember">https://github.com/elastic/ember</a></p>
+<p>malconv: <a href="https://github.com/jaketae/deep-malware-detection%60">https://github.com/jaketae/deep-malware-detection`</a></p>
+<p>malconv2: <a href="https://github.com/NeuromorphicComputationResearchProgram/MalConv2">https://github.com/NeuromorphicComputationResearchProgram/MalConv2</a></p>
+<p>stringsifter: <a href="https://github.com/mandiant/stringsifter">https://github.com/mandiant/stringsifter</a></p>
+<p>Miscrosoft malware 2015：https://github.com/xiaozhouwang/kaggle_Microsoft_Malware</p>
+<p><a href="https://github.com/sophos-ai/SOREL-20M">https://github.com/sophos-ai/SOREL-20M</a></p>
+<p><a href="https://github.com/boozallen/MOTIF">https://github.com/boozallen/MOTIF</a></p>
+<p><a href="https://github.com/dtrizna/quo.vadis">Hybrid Machine Learning Model for Malware Detection based on Windows Kernel Emulation</a></p>
+<p><a href="https://github.com/ManSoSec/Microsoft-Malware-Challenge">https://github.com/ManSoSec/Microsoft-Malware-Challenge</a></p>
+<p><a href="https://github.com/danielgibert/mlw_classification_structural_entropy/tree/df834f10e7560e06e1270034b20fc72c254fbce7">https://github.com/danielgibert/mlw_classification_structural_entropy/tree/df834f10e7560e06e1270034b20fc72c254fbce7</a></p>
+<p><strong>Malware Classification on Microsoft Malware Classification Challenge</strong></p>
+<p><a href="https://paperswithcode.com/sota/malware-classification-on-microsoft-malware">https://paperswithcode.com/sota/malware-classification-on-microsoft-malware</a></p>
+<p>**Top1:**HYDRA: A multimodal deep learning framework for malware classification. DeepConv <a href="https://www.sciencedirect.com/science/article/pii/S0167404820301462#bib0027">https://www.sciencedirect.com/science/article/pii/S0167404820301462#bib0027</a></p>
+<p>DEEP CONVOLUTIONAL MALWARE CLASSIFIERS CAN LEARN FROM RAW EXECUTABLES AND LABELS ONLY. <a href="https://openreview.net/pdf?id=HkHrmM1PM">https://openreview.net/pdf?id=HkHrmM1PM</a></p>
+<p><a href="https://github.com/danielgibert/mlw_classification_hydra">https://github.com/danielgibert/mlw_classification_hydra</a></p>
+<p>**Top2:**Orthrus: A Bimodal Learning Architecture for Malware Classification</p>
+<p><a href="https://github.com/danielgibert/mlw_classification_orthrus/blob/main/src/method/bimodal/base_architecture.py">https://github.com/danielgibert/mlw_classification_orthrus/blob/main/src/method/bimodal/base_architecture.py</a></p>
+<p>**Top3:**Using Convolutional Neural Networks for Classification of Malware represented as Images. <a href="https://link.springer.com/content/pdf/10.1007/s11416-018-0323-0.pdf">https://link.springer.com/content/pdf/10.1007/s11416-018-0323-0.pdf</a></p>
+<h2 id="malware-image">malware-image<a hidden class="anchor" aria-hidden="true" href="#malware-image">#</a></h2>
+<h3 id="paper-1">paper<a hidden class="anchor" aria-hidden="true" href="#paper-1">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>title</th>
+<th>tag</th>
+<th>year</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://vision.ece.ucsb.edu/sites/vision.ece.ucsb.edu/files/publications/nataraj_vizsec_2011_paper.pdf">Malware Images: Visualization and Automatic Classification.</a></td>
+<td>image</td>
+<td>2011</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://sci-hub.st/10.1109/NTMS.2018.8328749">Malware Classification with Deep Convolutional Neural Networks.</a></td>
+<td>image</td>
+<td>2018</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://www.microsoft.com/security/blog/2020/05/08/microsoft-researchers-work-with-intel-labs-to-explore-new-deep-learning-approaches-for-malware-classification/?ranMID=24542&amp;ranEAID=TnL5HPStwNw&amp;ranSiteID=TnL5HPStwNw-GT6ejN.xT45uGAoiNeXhdA&amp;epi=TnL5HPStwNw-GT6ejN.xT45uGAoiNeXhdA&amp;irgwc=1&amp;OCID=AID2200057_aff_7593_1243925&amp;tduid=%28ir__c660gj1qxkkf6mcs3o1kt0pf632xttiguwfdebq200%29%287593%29%281243925%29%28TnL5HPStwNw-GT6ejN.xT45uGAoiNeXhdA%29%28%29&amp;irclickid=_c660gj1qxkkf6mcs3o1kt0pf632xttiguwfdebq200">Microsoft researchers work with Intel Labs to explore new deep learning approaches for malware classification</a></td>
+<td>image</td>
+<td>2020</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td>Imagebased_Malware_Classification_A_Space_Filling_Curve_Approach</td>
+<td>image；希尔伯特</td>
+<td>2018</td>
+<td>⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://www.hindawi.com/journals/scn/2020/8881760/">Binary File’s Visualization and Entropy Features Analysis Combined with Multiple Deep Learning Networks for Malware Classification</a></td>
+<td>image</td>
+<td>2020</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://www.sciencedirect.com/science/article/pii/S0167404821000717">Malware detection employed by visualization and deep neural network</a></td>
+<td>gray；rgb；markov</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="blog-1">blog<a hidden class="anchor" aria-hidden="true" href="#blog-1">#</a></h3>
+<p><a href="https://www.cnblogs.com/gongyanzh/p/16337684.html">二进制文件可视化（二） </a></p>
+<h3 id="github-1">github<a hidden class="anchor" aria-hidden="true" href="#github-1">#</a></h3>
+<p><a href="https://medium.datadriveninvestor.com/what-convolutional-neural-network-architecture-works-best-for-classifying-malware-images-5a1215542f6a">What convolutional neural network architecture works best for classifying malware images</a></p>
+<p><a href="https://www.intel.com/content/www/us/en/artificial-intelligence/documents/stamina-deep-learning-for-malware-protection-whitepaper.html">https://www.intel.com/content/www/us/en/artificial-intelligence/documents/stamina-deep-learning-for-malware-protection-whitepaper.html</a></p>
+<h2 id="packer">packer<a hidden class="anchor" aria-hidden="true" href="#packer">#</a></h2>
+<h3 id="paper-2">paper<a hidden class="anchor" aria-hidden="true" href="#paper-2">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>title</th>
+<th>year</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://nexginrc.org/Publications/pub_files/vb09-zubair.pdf">PE-Probe: Leveraging Packer Detection and Structural Information to Detect Malicious Portable Executables</a></td>
+<td>2016</td>
+<td>⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://sci-hub.st/10.1109/MSP.2008.126">Collective Classification for Packed Executable Identification</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1002/cpe.5082">Packer identification method based on byte sequences</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.s3.eurecom.fr/docs/ndss20_packingheat.pdf">When Malware is Packin’ Heat; Limits of Machine Learning Classifiers Based on Static Analysis Features</a></td>
+<td>2020</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td><a href="https://sci-hub.st/10.1109/MSP.2008.126">Revealing Packed Malware</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="githubblog">github&amp;blog<a hidden class="anchor" aria-hidden="true" href="#githubblog">#</a></h3>
+<p><strong>When Malware is Packin’ Heat; Limits of Machine Learning Classifiers Based on Static Analysis Features</strong></p>
+<p>slides: <a href="https://www.usenix.org/sites/default/files/conference/protected-files/enigma18_vigna.pdf">https://www.usenix.org/sites/default/files/conference/protected-files/enigma18_vigna.pdf</a> ; <a href="https://www.ndss-symposium.org/ndss-paper/when-malware-is-packin-heat-limits-of-machine-learning-classifiers-based-on-static-analysis-features/">https://www.ndss-symposium.org/ndss-paper/when-malware-is-packin-heat-limits-of-machine-learning-classifiers-based-on-static-analysis-features/</a></p>
+<p>github: <a href="https://github.com/ucsb-seclab/packware">https://github.com/ucsb-seclab/packware</a></p>
+<p><a href="https://sarvamblog.blogspot.com/">https://sarvamblog.blogspot.com/</a></p>
+<h2 id="similarity">Similarity<a hidden class="anchor" aria-hidden="true" href="#similarity">#</a></h2>
+<h3 id="paper-3">paper<a hidden class="anchor" aria-hidden="true" href="#paper-3">#</a></h3>
+<p><a href="https://sites.cs.ucsb.edu/~chris/research/doc/dimva12_unpacked.pdf">A static, packer-agnostic filter to detect similar malware samples</a></p>
+<p><a href="https://arxiv.org/pdf/1908.05759.pdf">Similarity-based Android Malware Detection Using Hamming Distance of Static Binary Features</a></p>
+<p><a href="https://faculty.cc.gatech.edu/~dchau/papers/14_kdd_aesop.pdf">Guilt by Association: Large Scale Malware Detection by Mining File-relation Graphs</a></p>
+<p><a href="https://arxiv.org/abs/1909.11424">A Survey of Binary Code Similarity</a></p>
+<p>How Machine Learning Is Solving the Binary Function Similarity Problem</p>
+<p><a href="https://arxiv.org/abs/2112.05492">BCD: A Cross-Architecture Binary Comparison Database Experiment Using Locality Sensitive Hashing Algorithms</a></p>
+<p><a href="https://github.com/h4sh5/bcddb">https://github.com/h4sh5/bcddb</a></p>
+<h3 id="github-2">github<a hidden class="anchor" aria-hidden="true" href="#github-2">#</a></h3>
+<p><a href="https://github.com/SystemSecurityStorm/Awesome-Binary-Similarity">https://github.com/SystemSecurityStorm/Awesome-Binary-Similarity</a></p>
+<h2 id="binary-analysis">binary analysis<a hidden class="anchor" aria-hidden="true" href="#binary-analysis">#</a></h2>
+<h3 id="paper-4">paper<a hidden class="anchor" aria-hidden="true" href="#paper-4">#</a></h3>
+<p>PalmTree: Learning an Assembly Language Model for Instruction Embedding. <a href="https://dl.acm.org/doi/pdf/10.1145/3460120.3484587">https://dl.acm.org/doi/pdf/10.1145/3460120.3484587</a></p>
+<p><a href="https://keenlab.tencent.com/zh/whitepapers/neurips-2020-cameraready.pdf">CodeCMR: Cross-Modal Retrieval For Function-Level Binary Source Code Matching</a></p>
+<p>AVclass2: Massive Malware Tag Extraction from AV Labels. <a href="https://arxiv.org/pdf/2006.10615.pdf">https://arxiv.org/pdf/2006.10615.pdf</a></p>
+<h3 id="blog-2">blog<a hidden class="anchor" aria-hidden="true" href="#blog-2">#</a></h3>
+<p>BinaryAI: 二进制文件安全检测平台.<a href="https://www.binaryai.net/home"> https://www.binaryai.net/home</a></p>
+<p><a href="https://keenlab.tencent.com/zh/2021/08/11/2021-binaryai-public-release/">https://keenlab.tencent.com/zh/2021/08/11/2021-binaryai-public-release/</a></p>
+<p><a href="https://keenlab.tencent.com/zh/2019/12/10/Tencent-Keen-Security-Lab-Order-Matters/#more">https://keenlab.tencent.com/zh/2019/12/10/Tencent-Keen-Security-Lab-Order-Matters/#more</a></p>
+<h3 id="github-3">github<a hidden class="anchor" aria-hidden="true" href="#github-3">#</a></h3>
+<p><a href="https://github.com/islem-esi/DeepMalwareDetector">https://github.com/islem-esi/DeepMalwareDetector</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://aida-yy.github.io/tags/binary/">binary</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://aida-yy.github.io/posts/gnn_powerful_gin/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>HOW POWERFUL GNN</span>
+  </a>
+  <a class="next" href="https://aida-yy.github.io/posts/docker/">
+    <span class="title">Next »</span>
+    <br>
+    <span>docker快速上手</span>
+  </a>
+</nav>
+
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share ML&amp;二进制 paper list on twitter"
+        href="https://twitter.com/intent/tweet/?text=ML%26%e4%ba%8c%e8%bf%9b%e5%88%b6%20paper%20list&amp;url=https%3a%2f%2faida-yy.github.io%2fposts%2fml%25E4%25BA%258C%25E8%25BF%259B%25E5%2588%25B6%25E8%25AE%25BA%25E6%2596%2587%25E9%259B%2586%25E5%2590%2588%2f&amp;hashtags=binary">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share ML&amp;二进制 paper list on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2faida-yy.github.io%2fposts%2fml%25E4%25BA%258C%25E8%25BF%259B%25E5%2588%25B6%25E8%25AE%25BA%25E6%2596%2587%25E9%259B%2586%25E5%2590%2588%2f&amp;title=ML%26%e4%ba%8c%e8%bf%9b%e5%88%b6%20paper%20list&amp;summary=ML%26%e4%ba%8c%e8%bf%9b%e5%88%b6%20paper%20list&amp;source=https%3a%2f%2faida-yy.github.io%2fposts%2fml%25E4%25BA%258C%25E8%25BF%259B%25E5%2588%25B6%25E8%25AE%25BA%25E6%2596%2587%25E9%259B%2586%25E5%2590%2588%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share ML&amp;二进制 paper list on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2faida-yy.github.io%2fposts%2fml%25E4%25BA%258C%25E8%25BF%259B%25E5%2588%25B6%25E8%25AE%25BA%25E6%2596%2587%25E9%259B%2586%25E5%2590%2588%2f&title=ML%26%e4%ba%8c%e8%bf%9b%e5%88%b6%20paper%20list">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share ML&amp;二进制 paper list on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2faida-yy.github.io%2fposts%2fml%25E4%25BA%258C%25E8%25BF%259B%25E5%2588%25B6%25E8%25AE%25BA%25E6%2596%2587%25E9%259B%2586%25E5%2590%2588%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share ML&amp;二进制 paper list on whatsapp"
+        href="https://api.whatsapp.com/send?text=ML%26%e4%ba%8c%e8%bf%9b%e5%88%b6%20paper%20list%20-%20https%3a%2f%2faida-yy.github.io%2fposts%2fml%25E4%25BA%258C%25E8%25BF%259B%25E5%2588%25B6%25E8%25AE%25BA%25E6%2596%2587%25E9%259B%2586%25E5%2590%2588%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share ML&amp;二进制 paper list on telegram"
+        href="https://telegram.me/share/url?text=ML%26%e4%ba%8c%e8%bf%9b%e5%88%b6%20paper%20list&amp;url=https%3a%2f%2faida-yy.github.io%2fposts%2fml%25E4%25BA%258C%25E8%25BF%259B%25E5%2588%25B6%25E8%25AE%25BA%25E6%2596%2587%25E9%259B%2586%25E5%2590%2588%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://aida-yy.github.io/">Aida’s home</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

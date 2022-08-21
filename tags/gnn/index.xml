@@ -9,18 +9,24 @@
       <link>https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Aug 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://aida-yy.github.io/tags/gnn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://aida-yy.github.io/tags/gnn/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>GNN</title>
-      <link>https://aida-yy.github.io/posts/gnn/</link>
-      <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
+      <title>HOW POWERFUL GNN</title>
+      <link>https://aida-yy.github.io/posts/gnn_powerful_gin/</link>
+      <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://aida-yy.github.io/posts/gnn/</guid>
-      <description>采样 Introduction of Neighbor Sampling for GNN Training, DGL
-图采样 - 小源的文章 - 知乎 https://zhuanlan.zhihu.com/p/550887321
-【NIPS 2019】LADIES: 大规模图网络训练中的采样方法 - SillySun的文章 - 知乎 https://zhuanlan.zhihu.com/p/376038155
-papers https://github.com/naganandy/graph-based-deep-learning-literature
-HOW POWERFUL ARE GRAPH NEURAL NETWORKS?</description>
+      <guid>https://aida-yy.github.io/posts/gnn_powerful_gin/</guid>
+      <description>HOW POWERFUL ARE GRAPH NEURAL NETWORKS?
+本文是 Jure Leskovec 又一力作，首先对图神经网络的原理做了深入检出、提纲挈领的叙述，然后从原理方面介绍了如何发挥图神经网络的效用。
+图神经网络可以分为三个阶段：
+Aggregate：聚合邻居节点信息 $$ a^{(k)}{v} = AGGREGATE^{(k)}({h{\mu}^{(k−1)}:\mu\in N(v)}) $$
+Combine：聚合邻居和当前节点 $$ h_{\mu}^{(k)} = COMBINE^{(k)}({h_{\mu}^{(k−1)},a^{(k)}_v}) $$
+Readout：整合表示图中所有节点 $$ h_G = READOUT({h^{(K)}_v|v \in G}) $$
+在GraphSAGE中，Aggregate和Combine过程如下，GCN同理
+那么如何衡量图神经网络是否学到了良好的表示，这里提到了 Weisfeiler-Lehman test ，有兴趣可以下去研究。
+文章的和核心出发点在于：对于子树结构相同且对应节点特征相同的的俩个节点，一个有效的GNN应该有能力映射两个节点到embedding空间中相同的位置，决不会将两个不同的节点映射到同一embedding空间位置。
+Intuitively, a maximally powerful GNN maps two nodes to the same location only if they have identical subtree structures with identical features on the corresponding nodes
+A maximally powerful GNN would never map two different neighborhoods</description>
     </item>
     
   </channel>

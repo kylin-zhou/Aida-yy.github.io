@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>量化 on Aida’s home</title>
+    <link>https://aida-yy.github.io/categories/%E9%87%8F%E5%8C%96/</link>
+    <description>Recent content in 量化 on Aida’s home</description>
+    <image>
+      <url>https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://aida-yy.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 20 Aug 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://aida-yy.github.io/categories/%E9%87%8F%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>策略分析-macd</title>
+      <link>https://aida-yy.github.io/posts/%E7%AD%96%E7%95%A5%E5%88%86%E6%9E%90-macd/</link>
+      <pubDate>Sat, 20 Aug 2022 11:30:03 +0000</pubDate>
+      
+      <guid>https://aida-yy.github.io/posts/%E7%AD%96%E7%95%A5%E5%88%86%E6%9E%90-macd/</guid>
+      <description>MACD（Moving Average Convergence / Divergence）称为指数平滑移动平均线，是从双指数移动平均线发展而来的，由快的指数移动平均线减去慢的指数移动平均线得到两者的差值DIF，再用2×（DIF-DIF的9日加权移动均线DEA）得到MACD柱。MACD的意义和双移动平均线基本相同，即由快、慢均线的离散、聚合表征当前的多空状态和股价可能的发展变化趋势，但比简单移动均线系统更敏感，更容易辨识交易信号。当MACD从负数转向正数，是买的信号。当MACD从正数转向负数，是卖的信号。当MACD以大角度变化，表示快的移动平均线和慢的移动平均线的差距非常迅速的拉开，代表了一个市场大趋势的转变。
+MACD公式如下： DIFF=EMA(12)－EMA(26) #指标的快速线 DEA=EMA(DIFF,9) #指标的慢速线 MACD=2×(DIFF－DEA) #MACD红绿柱子 止损： 止损是控制风险的必要手段。在证券市场中指交易仓位获允许承受的最大损失，一旦达到损失上限，交易员必须平仓或减仓以阻止亏损扩大。止损方法常用的为两类：固定止损和移动止损。
+固定止损：顾名思义，买入后设定一个固定的回撤止损比例，只要所交易的标的跟买入价相比资产回撤达到了设置的止损比例，则平仓。 移动止损：又称“追踪止损”，即追随买入证券最新价格设置的止损。最简单的移动止损策略是：监测当前状态的买入标的的价格相对与前一交易日标的价格的回撤幅度进行止损，当回撤达到预设比例后平仓。 本研究的策略是： 买入：MACD低位金叉买入。低位的定义是，DIF，DEA都小于0。金叉，指DIF线从下上穿DEA线。 卖出：MACD死叉卖出。死叉，指DIF线从上下穿DEA线 止损：固定止损卖出，移动止损卖出。 策略参数： MACD参数，快速EMA周期：12，慢速EMA周期：26，DIFF平滑周期：9。 止损参数，固定止损：0.93（回撤7%），移动止损：0.95（回撤5%)。 回测标的：招商银行[600036.SH] 回测周期：20150101-20180101 </description>
+    </item>
+    
+  </channel>
+</rss>
